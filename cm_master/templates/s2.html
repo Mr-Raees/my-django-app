@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block title%}Semester 2 {% endblock%}
+{% block content %}
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <br><br>
+        <h2>Let's Go...</h2>
+        <p>Semester 2</p>
+      </div>
+            <div class="row">
+              <!-- ======= language lab ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4><a href="">Language Lab</a></h4>
+                  <ul>
+                    {% for pdf in lan %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end language lab ======= -->
+              <!-- ======= physics ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4><a href="">Physics</a></h4>
+                  <ul>
+                    {% for pdf in phy2 %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end physics ======= -->
+              <!-- ======= EVS ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-tachometer"></i></div>
+                  <h4><a href="">Environmental Studies</a></h4>
+                  <ul>
+                    {% for pdf in evs %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end EVS ======= -->
+              <!-- ======= maths ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-world"></i></div>
+                  <h4><a href="">Maths</a></h4>
+                  <ul>
+                    {% for pdf in mat2 %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end maths ======= -->
+              <!-- ======= FEEE ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-slideshow"></i></div>
+                  <h4><a href="">Fundamentals Of Electrical And Electronics Engineering</a></h4>
+                  <ul>
+                    {% for pdf in fee %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end FEEE ======= -->
+              <!-- ======= PSP ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Problem Solving And Programming</a></h4>
+                  <ul>
+                    {% for pdf in psp %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end PSP ======= -->
+              <!-- ======= workshop======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Engineering Workshop</a></h4>
+                  <ul>
+                    {% for pdf in work %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p>
+                </div>
+              </div>
+              <!-- ======= end workshop ======= -->
+              <!-- ======= Physics lab ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Physics Lab</a></h4>
+                  <ul>
+                    {% for pdf in phylab %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div></div>
+              </div>
+              <!-- ======= end physics lab ======= -->
+              <!-- ======= FEE lab ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Fundamental Elecrical And Electronics Lab</a></h4>
+                  <ul>
+                    {% for pdf in feelab %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div></div>
+              </div>
+              <!-- ======= end FEE lab ======= -->
+              <!-- ======= PSP lab ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Problem Solving And Programming Lab</a></h4>
+                  <ul>
+                    {% for pdf in psplab %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p>
+                </div>
+              </div>
+              </div>
+              <!-- ======= end PSP lab ======= -->
+            </div>
+    </div>
+  </section><!-- End Services Section -->
+{% endblock %}   

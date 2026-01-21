@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% block title%}Semester 3 {% endblock%}
+{% block content %}
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <br><br>
+        <h2>Let's Go...</h2>
+        <p>Semester 3</p>
+      </div>
+            <div class="row">
+              <!-- ======= CSA ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4><a href="">Computer System Architecture</a></h4>
+                  <ul>
+                    {% for pdf in csa %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end CSA ======= -->
+              <!-- ======= C program ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4><a href="">Programming In C</a></h4>
+                  <ul>
+                    {% for pdf in cp %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end C program ======= -->
+              <!-- ======= CN 1======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-tachometer"></i></div>
+                  <h4><a href="">Computer Networks 1</a></h4>
+                  <ul>
+                    {% for pdf in cn1 %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end CN 1 ======= -->
+              <!-- ======= DCF ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-world"></i></div>
+                  <h4><a href="">Digital Computer Fundamentals</a></h4>
+                  <ul>
+                    {% for pdf in dcf %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end DCF ======= -->
+              <!-- =======C lab======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-slideshow"></i></div>
+                  <h4><a href="">Programming in C lab</a></h4>
+                  <ul>
+                    {% for pdf in cl %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end C lab======= -->
+              <!-- ======= SA lab ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">System Administration Lab</a></h4>
+                  <ul>
+                    {% for pdf in sa %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end SA lab ======= -->
+              <!-- ======= DCF lab======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Digital Computer Fundamentals Lab</a></h4>
+                  <ul>
+                    {% for pdf in dcflab %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end DCF lab======= -->
+              <!-- ======= CH lab 1 ======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Computer Hardware Lab 1</a></h4>
+                  <ul>
+                    {% for pdf in ch %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end CH lab 1======= -->
+              <!-- ======= AD lab======= -->
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-arch"></i></div>
+                  <h4><a href="">Application Development Lab</a></h4>
+                  <ul>
+                    {% for pdf in ad %}
+                      <li><a href="{{ pdf.file.url }}">{{ pdf.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  <p>_____________________________________________________</p></div>
+              </div>
+              <!-- ======= end AD lab======= -->
+            </div>
+    </div>
+  </section><!-- End Services Section -->
+{% endblock %}   
