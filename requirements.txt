@@ -1,0 +1,8 @@
+aikido_zen==1.2.30
+asgiref==3.6.0
+Django==4.1.7
+packaging==24.2
+Pillow==9.4.0
+regex==2024.11.6
+sqlparse==0.4.3
+wrapt==1.17.3

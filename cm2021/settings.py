@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 # Include this before any other code or imports
-import aikido_zen
-aikido_zen.protect()
+#import aikido_zen
+#aikido_zen.protect()
 
 
 
@@ -31,7 +31,9 @@ SECRET_KEY = 'django-insecure-hw=ddpufm&jx!#=spwt+o1^vxu7%65^2d3jy(4zj=2zhjv_6ac
 DEBUG = False
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['itsfirsttimeimhere.pythonanywhere.com']
+#ALLOWED_HOSTS = ['itsfirsttimeimhere.pythonanywhere.com']
+ALLOWED_HOSTS = ['cmmaster2021.pythonanywhere.com']
+
 
 
 # Application definition
@@ -61,7 +63,7 @@ ROOT_URLCONF = 'cm2021.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'cm_master', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_DIRS=[
-    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'staticfiles'),
 ]
 STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 
