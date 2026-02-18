@@ -4,6 +4,12 @@ from.import views
 
 
 urlpatterns = [
+    # Auth
+    path('login/', views.login_view, name='login'),
+    path('signup/', views.signup_view, name='signup'),
+    path('logout/', views.logout_view, name='logout'),
+
+    # App pages
     path('', views.index, name='index'),
     path('s1/', views.s1, name='s1'),
     path('s2/', views.s2, name='s2'),
